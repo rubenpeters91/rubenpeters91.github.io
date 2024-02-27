@@ -1,1 +1,58 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    <script src="run_python.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ruben Peters</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <section>
+                    <h2>About Me</h2>
+                    <p>
+                        My name is Ruben Peters, I'm a Data Scientist at the UMC Utrecht hospital and I've a background
+                        in
+                        Computer Science.
+                        In my free time I also like to automate my home, using home assistant.
+                    </p>
+                    <p>
+                        This website is a collection of my projects and interests and also serves as a place to try out
+                        web
+                        development.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <section>
+                    <h2>Using pyodide</h2>
+                    <p>
+                        I work a lot in Python, and a fun thing to try is running Python in the browser:
+                    </p>
+                    <input id="code" value="sum([1, 2, 3, 4, 5])" />
+                    <button onclick="evaluatePython()">Run</button>
+                    <br />
+                    <br />
+                    <div>Output:</div>
+                    <textarea id="output" style="width: 100%;" rows="6" disabled></textarea>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ruben Peters</p>
+    </footer>
+</body>
+
+</html>
